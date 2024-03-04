@@ -1,0 +1,596 @@
+/* стиль для всех символов "точка" (как пример это для штрих пунктирной линии) */
+* :nth-stroke(3) {
+  stroke: #df0024;
+}
+
+/*--1-- @title Красные линии */
+[one_code='1'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+}
+
+/*--2-- @title Красные линии ТОП */
+[one_code='2'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--3-- @title Красные линии ЛО */
+[one_code='3'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--4-- @title Красные линии ОДМС */
+[one_code='4'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--5-- @title Границы  санитарно-защитных зон */
+[one_code='5'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 35;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024,
+  symbol('wkt://LINESTRING (-0.45 0, -0.45 3, -1.2 3, -1.2 3.7, 1.2 3.7, 1.2 3, 0.45 3, 0.45 0, -0.45 0)'); /* Отображение галочки */
+  stroke-size: none, 6px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--6-- @title Границы полос отвода железных дорог */
+[one_code='6'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 10 10, 1 19, 1 19;
+  stroke-dashoffset: 0, 6.5, 3.5;
+  stroke: #df0024, symbol(circle), symbol(circle); /* Отображение галочки */
+  stroke-size: none, 1px, 1px;
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--7-- @title Границы режимов на ООПТ */
+[one_code='7'] {
+  stroke: #009f3c;
+  stroke-width: 0.5;
+}
+
+/*--8-- @title Границы особо охраняемых природных территорий  */
+[one_code='8'] {
+  stroke: #df0024, symbol(triangle); /* Отображение и линии, и треугольника */
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-rotation: 180;
+  stroke-offset: 0, -1.5; /* Смещение символа вверх */
+  stroke-size: none, 8;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки треугольника */
+  }
+}
+
+/*--9-- @title Границы территорий ОКН  */
+[one_code='9'] {
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.9 0, -0.9 2.5, 0.9 2.5, 0.9 0, -0.9 0)');
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-size: none, 7;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки треугольника */
+  }
+}
+
+/*--10-- @title Границы территорий ОКН  */
+[one_code='10'] {
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.31 0, -0.31 2.7, 0.31 2.7, 0.31 0, -0.31 0)');
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-size: none, 7;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки треугольника */
+  }
+}
+
+/*--11-- @title Границы  зон храняемого природного ландшафта территорий */
+[one_code='11'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 10 10, 5 35;
+  stroke-dashoffset: 0, 17.5;
+  stroke: #df0024, symbol('wkt://LINESTRING (0 0, -0.5 0.87, 0.5 0.87, 0 0)'); /* Отображение галочки */
+  stroke-size: none, 5.5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--13-- @title Границы зон 1 пояса санитарной охраны */
+[one_code='13'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 15;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.75 0, -0.75 2.5, 0.25 2.5, 0.75 0, -0.75 0)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--14-- @title Границы зон 2 пояса санитарной охраны */
+[one_code='14'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 15;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.45 0, -0.45 2.5, 0.45 2.5, 0.45 0, -0.45 0)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--15-- @title Границы жестких зон 2 пояса санитарной охраны */
+[one_code='15'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 20, 1 24;
+  stroke-dashoffset: 0, 20, 5;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.45 0, -0.45 2.5, 0.45 2.5, 0.45 0, -0.45 0)'),
+    symbol(circle); /* Отображение галочки */
+  stroke-size: none, 5px, 1px;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--16-- @title Границы водоохранных (рыбоохранных зон) */
+[one_code='16'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 10 10, 5 35;
+  stroke-dashoffset: 0, 17.5;
+  stroke: #df0024, symbol('wkt://LINESTRING (-1 1, 0 0, 1 1)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--17-- @title Границы прибрежных полос */
+[one_code='17'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 10 10, 5 35, 1 19;
+  stroke-dashoffset: 0, 17.5, 5;
+  stroke: #df0024, symbol('wkt://LINESTRING (-1 1, 0 0, 1 1)'), symbol(circle); /* Отображение галочки */
+  stroke-size: none, 5px, 1px;
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--18-- @title Объектов природного комплекса */
+[one_code='18'] {
+  stroke: #df0024, symbol(triangle); /* Отображение и линии, и треугольника */
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-rotation: 180;
+  stroke-offset: 0, -1.5; /* Смещение символа вверх */
+  stroke-size: none, 8;
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--19-- @title Границы охранных зон ООПТ */
+[one_code='19'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: none, 5 36;
+
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.25 0, -0.25 2.5, 0.25 2.5, 0.25 0, -0.25 0)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--20-- @title Границы защитных зон ОКН */
+[one_code='20'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.25 0, -0.25 2.5, 0.25 2.5, 0.25 0, -0.25 0)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--21-- @title Границы режимов на территориях ПК Москвы */
+[one_code='21'] {
+  stroke: #009f3c;
+  stroke-width: 0.5;
+}
+
+/*--22-- @title Границы  зон затопления */
+[one_code='22'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024, symbol('wkt://MULTILINESTRING((-0.5 0, 0 1), (0 0, 0.5 1))'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--23-- @title Границы  зон регулирования застройки и хозяйственной деятельности */
+[one_code='23'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--25-- @title Границы зон транспортных сооружений */
+[one_code='25'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--26-- @title Границы линий застройки */
+[one_code='26'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--29-- @title Границы технических зон инженерных коммуникаций и сооружений */
+[one_code='29'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--30-- @title Границы охранных зон военного О */
+[one_code='30'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--31-- @title Границы охранных зон радиотехнического О */
+[one_code='31'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--32-- @title Границы охранных зон электроэнергетики */
+[one_code='32'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--33-- @title Границы охранных зон ОИ метрополитена */
+[one_code='33'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--34-- @title Границы охранных зон связи */
+[one_code='34'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--35-- @title Границы охранных зон трубопровода */
+[one_code='35'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--36-- @title Границы технических зон метрополитена */
+[one_code='36'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--37-- @title Границы охранных зон стационарных пунктов */
+[one_code='37'] {
+  stroke: #df0024, symbol(square); /* Отображение и линии, и треугольника */
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-rotation: 45;
+  stroke-offset: 0, -3; /* Смещение символа вверх */
+  stroke-size: none, 7;
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--38-- @title Границы охранных зон пунктов государственной геодезической сети */
+[one_code='38'] {
+  stroke: #df0024, symbol(triangle); /* Отображение и линии, и треугольника */
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-offset: 0, -3; /* Смещение символа вверх */
+  stroke-size: none, 8;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024;
+  }
+}
+
+/*--39-- @title Границы зон минимальных расстояний до магистральных или промышленных трубопроводов */
+[one_code='39'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--40-- @title Границы охранных зон тепловых сетей */
+[one_code='40'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--41-- @title Границы береговых полос */
+[one_code='41'] {
+  stroke: #0000ff;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--44-- @title Границы зон охраняемого объекта */
+[one_code='44'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 20, 1 24;
+  stroke-dashoffset: 0, 20, 5;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.25 0, -0.25 2.5, 0.25 2.5, 0.25 0, -0.25 0)'),
+    symbol(circle); /* Отображение галочки */
+  stroke-size: none, 5px, 1px;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--45-- @title Границы зон внеуличного пешеходного перехода */
+[one_code='45'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--46-- @title Границы зон зарезервированных для образования особо охраняемых природных территорий */
+[one_code='46'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 10 10, 5 35;
+  stroke-dashoffset: 0, 17.5;
+  stroke: #df0024, symbol('wkt://LINESTRING (0 0, -0.5 0.87, 0.5 0.87, 0 0)'); /* Отображение галочки */
+  stroke-size: none, 5.5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки */
+  }
+}
+
+/*--47-- @title Границы  зон особо охраняемых зеленых территорий */
+[one_code='47'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 0, 10 35;
+  stroke: #df0024,
+ symbol('wkt://LINESTRING (-0.45 0, -0.45 3, -1.2 3, -1.2 3.7, 1.2 3.7, 1.2 3, 0.45 3, 0.45 0, -0.45 0)'); /* Отображение галочки */
+  stroke-size: none, 10;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки */
+  }
+}
+
+/*--49-- @title Границы зон лесопарковых зеленых поясов*/
+[one_code='49'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 3 6;
+}
+
+/*--50-- @title Границы зон приаэродромной территрии*/
+[one_code='50'] {
+  stroke: #df0024, symbol(triangle); /* Отображение и линии, и треугольника */
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-offset: 0, -2.5; /* Смещение символа вверх */
+  stroke-size: none, 8;
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--51-- @title Границы полос воздушных подходов на аэродромах */
+[one_code='51'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 0.1, 0.1 0.87, 0.5 0.1, -0.5 0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--55-- @title Границы памятников природы */
+[one_code='55'] {
+  stroke: #df0024, symbol(circle); /* Отображение и линии, и треугольника */
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-offset: 0, -2; /* Смещение символа вверх */
+  stroke-size: none, 7px;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--57-- @title Границы зон ОКС */
+[one_code='57'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--58-- @title Границы зон транспортных коммуникаций */
+[one_code='58'] {
+  stroke: #df0024;
+  stroke-width: 0.5;
+  stroke-dasharray: 12 4;
+}
+
+/*--59-- @title Границы зон 1А пояса санитарной охраны */
+[one_code='59'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 15;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.75 0, -0.75 2.5, 0.25 2.5, 0.75 0, -0.75 0)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--60-- @title Границы зон 1Б пояса санитарной охраны */
+[one_code='60'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 15;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.75 0, -0.75 2.5, 0.25 2.5, 0.75 0, -0.75 0)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--61-- @title Границы  зон 3 пояса санитарной охраны */
+[one_code='61'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 1 24, 1 24, 5 20;
+  stroke-dashoffset: 0, 6.5, 3.5, 20;
+  stroke: #df0024, symbol(circle), symbol(circle),
+    symbol('wkt://LINESTRING (-0.45 0, -0.45 2.5, 0.45 2.5, 0.45 0, -0.45 0)'); /* Отображение галочки */
+  stroke-size: none, 1px, 1px, 5px;
+  :nth-stroke(4) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  };
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--62-- @title Границы санитарно-защитных зон (расчетных) */
+[one_code='62'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 35;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024,
+  symbol('wkt://LINESTRING (-0.45 0, -0.45 3, -1.2 3, -1.2 3.7, 1.2 3.7, 1.2 3, 0.45 3, 0.45 0, -0.45 0)'); /* Отображение галочки */
+  stroke-size: none, 6px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--63-- @title Границы санитарно-защитных зон (ориентировочных) */
+[one_code='63'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 35;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024,
+  symbol('wkt://LINESTRING (-0.45 0, -0.45 3, -1.2 3, -1.2 3.7, 1.2 3.7, 1.2 3, 0.45 3, 0.45 0, -0.45 0)'); /* Отображение галочки */
+  stroke-size: none, 6px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+}
+
+/*--64-- @title Границы зон подтопления (сильного)*/
+[one_code='64'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024, symbol('wkt://MULTILINESTRING((-0.5 0, 0 1), (0 0, 0.5 1))'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--65-- @title Границы зон подтопления (умеренного)*/
+[one_code='65'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024, symbol('wkt://MULTILINESTRING((-0.5 0, 0 1), (0 0, 0.5 1))'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*--66-- @title Границы зон подтопления (слабого)*/
+[one_code='66'] {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024, symbol('wkt://MULTILINESTRING((-0.5 0, 0 1), (0 0, 0.5 1))'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}

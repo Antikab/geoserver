@@ -1,0 +1,45 @@
+/* @title Границы территориальных зон */
+* {
+  stroke: #223f59;
+
+  stroke-width: 1.8px;
+}
+
+/* @title Границы подзон территориальных зон */
+* {
+  stroke: #fea954;
+
+  stroke-width: 1.8px;
+}
+
+/* @title Территориальные зоны, поставленные на кадастровый учет */
+* {
+  fill: #f8ffef;
+  fill-opacity: 0.5;
+}
+
+/* @title Границы территориальных зон */
+* {
+  stroke: #0000ff;
+  stroke-width: 1.8;
+  fill: #0000ff;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #0000ff;
+    stroke-width: 1px;
+    fill-opacity: 0.9;
+  }
+}
+
+/* @title Границы участков ППТ */
+* {
+  stroke: #ff7676;
+
+  stroke-width: 1.8px;
+}
+
+/* @title Здания */
+* {
+  fill: #ececec;
+}

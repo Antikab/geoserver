@@ -1,0 +1,623 @@
+/*--1-- @title Красные линии */
+[linecode='1'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 10;
+    stroke: #df0024;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+/* f */
+/*--2-- @title Красные линии ТОП */
+[linecode='2'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #e3007b;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--3-- @title Красные линии ЛО */
+[linecode='3'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #e3007b;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--4-- @title Красные линии ОДМС */
+[linecode='4'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #e3007b;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--5-- @title Границы  санитарно-защитных зон */
+[linecode='5'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #7cc623;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--6-- @title Границы полос отвода железных дорог */
+[linecode='6'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #eb880e;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--7-- @title Границы режимов на ООПТ */
+[linecode='7'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #f8f400;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--8-- @title Границы особо охраняемых природных территорий  */
+[linecode='8'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #f8f400;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--9-- @title Границы территорий ОКН  */
+[linecode='9'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #f8f400;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--10-- @title Границы охранных зон природных территорий  */
+[linecode='10'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #20e6f2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--11-- @title Границы  зон храняемого природного ландшафта территорий  */
+[linecode='11'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #009f3c;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--13-- @title Границы зон 1 пояса санитарной охраны */
+[linecode='13'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #0669b2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--14-- @title Границы зон 2 пояса санитарной охраны */
+[linecode='14'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 10;
+    stroke: #0669b2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--15-- @title Границы жестких зон 2 пояса санитарной охраны */
+[linecode='15'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 0;
+  :fill {
+    size: 10;
+    stroke: #0669b2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--16-- @title Границы водоохранных (рыбоохранных зон) */
+[linecode='16'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #0669b2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--17-- @title Границы прибрежных полос */
+[linecode='17'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #0669b2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--18-- @title Границы объектов природного комплекса */
+[linecode='18'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 10;
+    stroke: #009f3c;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--19-- @title Границы охранных зон ООПТ */
+[linecode='19'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 10;
+    stroke: #f8f400;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--20-- @title Границы защитных зон ОКН */
+[linecode='20'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 20;
+    stroke: #20e6f2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--21-- @title Границы режимов на территориях ПК Москвы */
+[linecode='21'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 10;
+    stroke: #009f3c;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--22-- @title Границы  зон затопления */
+[linecode='22'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #8cbeff;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--23-- @title Границы  зон регулирования застройки и хозяйственной деятельности */
+[linecode='23'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #e3007b;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--25-- @title Границы зон транспортных сооружений */
+[linecode='25'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #df0024;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--26-- @title Границы линий застройки */
+[linecode='26'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #7cc623;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--29-- @title Границы технических зон инженерных коммуникаций и сооружений */
+[linecode='29'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #3d107b;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--30-- @title Границы охранных зон военного О */
+[linecode='30'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #e3007b;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--31-- @title Границы охранных зон радиотехнического О */
+[linecode='31'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #eb880e;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--32-- @title Границы охранных зон электроэнергетики */
+[linecode='32'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #eb880e;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--33-- @title Границы охранных зон ОИ метрополитена */
+[linecode='33'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 20;
+    stroke: #eb880e;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--34-- @title Границы охранных зон связи */
+[linecode='34'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #f8f400;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--35-- @title Границы охранных зон трубопровода */
+[linecode='35'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #20e6f2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--36-- @title Границы технических зон метрополитена */
+[linecode='36'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #eb880e;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--37-- @title Границы охранных зон стационарных пунктов */
+[linecode='37'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--38-- @title Границы охранных зон пунктов государственной геодезической сети */
+[linecode='38'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--39-- @title Границы зон минимальных расстояний до магистральных или промышленных трубопроводов */
+[linecode='39'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #20e6f2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--40-- @title Границы охранных зон тепловых сетей */
+[linecode='40'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #20e6f2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--41-- @title Границы береговых полос */
+[linecode='41'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #20e6f2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--44-- @title Границы зон охраняемого объекта */
+[linecode='44'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--45-- @title Границы зон внеуличного пешеходного перехода */
+[linecode='45'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 20;
+    stroke: #e3007b;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--46-- @title Границы зон зарезервированных для образования особо охраняемых природных территорий */
+[linecode='46'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #f8f400;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--47-- @title Границы  зон особо охраняемых зеленых территорий */
+[linecode='47'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #009f3c;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--49-- @title Границы зон лесопарковых зеленых поясов*/
+[linecode='49'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #009f3c;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--50-- @title Границы зон приаэродромной территрии*/
+[linecode='50'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--51-- @title Границы полос воздушных подходов на аэродромах */
+[linecode='51'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #694720;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--55-- @title Границы памятников природы */
+[linecode='55'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #f8f400;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--57-- @title Границы зон ОКС */
+[linecode='57'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #f8f400;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--58-- @title Границы зон транспортных коммуникаций */
+[linecode='58'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #e3007b;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--59-- @title Границы зон 1А пояса санитарной охраны */
+[linecode='59'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #0669b2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--60-- @title Границы зон 1Б пояса санитарной охраны */
+[linecode='60'] {
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 10;
+    stroke: #0669b2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--61-- @title Границы  зон 3 пояса санитарной охраны */
+[linecode='61'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #0669b2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--62-- @title Границы санитарно-защитных зон (расчетных) */
+[linecode='62'] {
+  fill: symbol('shape://horline');
+  :fill {
+    size: 20;
+    stroke: #7cc623;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--63-- @title Границы санитарно-защитных зон (ориентировочных) */
+[linecode='63'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #7cc623;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--64-- @title Границы зон подтопления (сильного)*/
+[linecode='64'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #b18dbe;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--65-- @title Границы зон подтопления (умеренного)*/
+[linecode='65'] {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #94c5ff;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+/*--66-- @title Границы зон подтопления (слабого)*/
+[linecode='66'] {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #abe6d2;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
