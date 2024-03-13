@@ -1,0 +1,30 @@
+/*@title Архнадзор */
+[arch_nadzor IS not NULL] {
+  stroke: #3b3336;
+  stroke-width: 0.1px;
+  fill: #732600;
+  mark: symbol(star);
+  mark-size: 16;
+  :mark {
+    stroke: none;
+    fill: #fc1bf5;
+  }
+}
+
+/*@title Дома */
+* {
+  stroke: #017f01;
+  stroke-width: 0.1px;
+
+  fill: #017f01;
+}
+
+/*@title завершено переселение, Идёт переселение, Снесен */
+[status LIKE '%Завершено переселение%'],
+[status LIKE '%Идёт переселение%'],
+[status LIKE '%Снесен%'] {
+  stroke: none;
+  stroke-width: none;
+
+  fill: none;
+}
