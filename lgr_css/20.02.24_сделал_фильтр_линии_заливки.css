@@ -2,8 +2,13 @@
 [arch_nadzor IS not NULL] {
   stroke: #3b3336;
   stroke-width: 0.1px;
-
   fill: #732600;
+  mark: symbol(star);
+  mark-size: 16;
+  :mark {
+    stroke: none;
+    fill: #fc1bf5;
+  }
 }
 
 /*@title Дома */
