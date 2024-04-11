@@ -1,0 +1,218 @@
+/* @title МЦК - mcc_now  */
+[code='mcc_now'] [hide_obj is NULL] {
+  stroke: #e1171b, #ffffff;
+  stroke-width: 2.5px, 1.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-1 */
+[code='mcd_1_now'] [style is NULL] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #ed9f2d;
+  stroke-width: 3.5px, 2.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-1 dooble */
+[code='mcd_1_now'] [style='mcd_4_dooble'] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #ed9f2d;
+  stroke-width: 2.5px, 1.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-2 */
+[code='mcd_2_now'] [style is NULL] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #df477c;
+  stroke-width: 3.5px, 2.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-2 dooble */
+[code='mcd_2_now'] [style='mcd_4_dooble'] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #df477c;
+  stroke-width: 2.5px, 1.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-3 */
+[code='mcd_3_now'] [style is NULL] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #e15a2d;
+  stroke-width: 3.5px, 2.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-3 dooble */
+[code='mcd_3_now'] [style='dooble'] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #e15a2d;
+  stroke-width: 2.5px, 1.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-4 */
+[code='mcd_4_now'] [style is NULL] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #3cb183;
+  stroke-width: 3.5px, 2.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-4 dooble-(1-2) */
+[code='mcd_4_now']
+  [style='mcd_1_dooble' or style = 'mcd_2_dooble']
+  [category='МЦД']
+  [hide_obj is NULL] {
+  stroke: #25323b, #3cb183;
+  stroke-width: 2.5px, 1.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-5 */
+[code='mcd_5_pr'] [style is NULL] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #6cb644;
+  stroke-width: 3.5px, 2.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-5 dooble */
+[code='mcd_5_pr'] [style='dooble'] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #25323b, #6cb644;
+  stroke-width: 2.5px, 1.8px;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-5 pr */
+[code='mcd_5_pr'] [style='пунктир'] [category='МЦД'] [hide_obj is NULL] {
+  stroke: #ffffff, #6cb644;
+  stroke-width: 3.5px, 2.8px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-1 pers */
+[code='mcd_1_pers'] [category='ЖД'] [hide_obj is NULL] {
+  stroke: #ffffff, #ed9f2d;
+  stroke-width: 3.5px, 2.8px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-2 pers */
+[code='mcd_2_pers'] [category='ЖД'] [hide_obj is NULL] {
+  stroke: #ffffff, #df477c;
+  stroke-width: 3.5px, 2.8px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-3 pers */
+[code='mcd_3_pers'] [category='ЖД'] [hide_obj is NULL] {
+  stroke: #ffffff, #e15a2d;
+  stroke-width: 3.5px, 2.8px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-4 pers */
+[code='mcd_4_pers'] [category='ЖД'] [hide_obj is NULL] {
+  stroke: #ffffff, #3cb183;
+  stroke-width: 3.5px, 2.8px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title МЦД-5 pers */
+[code='mcd_5_pers'] [category='ЖД'] [hide_obj is NULL] {
+  stroke: #ffffff, #6cb644;
+  stroke-width: 3.5px, 2.8px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title Хорды СЗХ */
+[code='uds_szh_now'] [category='Хорды'] [hide_obj is NULL] {
+  stroke: #f06900;
+  stroke-width: 2.5px;
+}
+
+/* @title Хорды СЗХ pr */
+[code='uds_szh_pr'] [category='Хорды'] [hide_obj is NULL] {
+  stroke: #ffffff, #f06900;
+  stroke-width: 2.5px, 2.5px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title Хорды Южная Рокада */
+[code='uds_ur_now'] [category='Хорды'] [hide_obj is NULL] {
+  stroke: #0064ff;
+  stroke-width: 2.5px;
+}
+
+/* @title Хорды Южная Рокада pr */
+[code='uds_ur_pr'] [category='Хорды'] [hide_obj is NULL] {
+  stroke: #ffffff, #0064ff;
+  stroke-width: 2.5px, 2.5px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title Хорды СВХ */
+[code='uds_svh_now'] [category='Хорды'] [hide_obj is NULL] {
+  stroke: #c40bbb;
+  stroke-width: 2.5px;
+}
+
+/* @title Хорды СВХ pr */
+[code='uds_svh_pr'] [category='Хорды'] [hide_obj is NULL] {
+  stroke: #ffffff, #c40bbb;
+  stroke-width: 2.5px, 2.5px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title Хорды ЮВХ */
+[code='uds_uvh_now'] [category='Хорды'] [hide_obj is NULL] {
+  stroke: #c40bbb;
+  stroke-width: 2.5px;
+}
+
+/* @title Хорды ЮВХ pr */
+[code='uds_uvh_pr'] [category='Хорды'] [hide_obj is NULL] {
+  stroke: #ffffff, #c40bbb;
+  stroke-width: 2.5px, 2.5px;
+  stroke-dasharray: none, 15 10;
+  z-index: 0, 0.5;
+}
+
+/* @title ЖД */
+[code='railway_ex'] [category='ЖД'] [hide_obj is NULL] {
+  stroke: #323232, #ffffff;
+  stroke-width: 1.8px, 1.3px;
+  stroke-dasharray: none, 15 10;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+/* @title ВСМ */
+[code='railway_vsm_pr'] [category='ЖД'] [hide_obj is NULL] {
+  stroke: #6e6e6e, #ffffff;
+  stroke-width: 2.8px, 2.3px;
+  stroke-dasharray: none, 15 10;
+  stroke-linecap: round;
+  z-index: 0, 0.5;
+}
+
+[code='metro_13_ex' or code = 'metro_13_now'] {
+  stroke: #00f4f4, #ffffff;
+  stroke-width: 2px, 1px;
+  z-index: 0, 0.5;
+}
