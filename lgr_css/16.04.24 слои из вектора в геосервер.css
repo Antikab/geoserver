@@ -77,37 +77,543 @@
   }
 }
 
-/*--  -- srv_207_k.layer001 @title 3.1 Зоны поставленные на кадастровый учет */
+/*--  -- srv_207_k.layer001 @title Зоны поставленные на кадастровый учет  */
 * {
   stroke: #0b9939;
   stroke-width: 0.5;
   stroke-opacity: 0.3;
+  font-fill: #0b9939;
+  font-family: Arial;
+  font-size: 13;
+  font-weight: bold;
+  label-anchor: 0.5 0;
+  label-max-displacement: 1;
+  label-padding: 10;
   fill: symbol('shape://slash');
-  fill-rotation: 90;
+  fill-rotation: 0;
   :fill {
-    size: 10;
+    size: 20;
     stroke: #0b9939;
     stroke-width: 2px;
     fill-opacity: 0.9;
   }
 }
 
+[@sd > 500 and @sd < 8000] {
+  label: [vri_540];
+}
+
 /*--  -- srv_207_k.layer002 @title Зоны (рабочие временные)  */
 * {
-  stroke: #2e9a06;
-  stroke-width: 1;
+  stroke: #4daf4a;
+  stroke-width: 3;
+  font-fill: #4daf4a;
+  font-family: Arial;
+  font-size: 13;
+  label: [vri_540];
+  label-anchor: 0.5 0;
+  label-max-displacement: 1;
+  label-padding: 2;
 }
 
 /*--  -- srv_207_k.layer003 @title Подзоны (рабочие временные)  */
 * {
-  stroke: #696a6e;
+  stroke: #898989;
+  stroke-width: 3;
+  font-fill: #898989;
+  font-family: Arial;
+  font-size: 13;
+  [@sd > 500 and @sd < 7000] {
+    label: [plotnost] '/' [vysota] '/' [proczastro];
+  }
+  label-anchor: 0.5 0;
+  label-max-displacement: 1;
+  label-padding: 2;
+}
+
+/*--  -- srv_207_k.layer004 @title Зоны актуальные */
+* {
+  stroke: #4c49ff;
+  stroke-width: 3;
+  font-fill: #1c1efa;
+  font-family: Arial;
+  font-size: 13;
+  font-weight: bold;
+  label-anchor: 0.5 0;
+  label-max-displacement: 1;
+  label-padding: 10;
+}
+
+[@sd > 500 and @sd < 8000] {
+  label: [vri_540];
+}
+
+/*--  -- srv_207_k.layer005 @title Подзоны (актуальные) */
+* {
+  stroke: #ed5d10;
+  stroke-width: 2;
+  font-fill: #ed5d10;
+  font-family: Arial;
+  font-size: 13;
+  font-weight: bold;
+  [@sd > 500 and @sd < 8000] {
+    label: [plotnost] '/' [vysota] '/' [proczastro];
+  }
+  label-anchor: 0 0;
+  label-max-displacement: 150;
+  label-padding: 2;
+}
+
+/*--  -- srv_207_k.layer006 @title Зоны по 120-ПП (14.01.2020) */
+* {
+  stroke: #4300ee;
+  stroke-width: 3;
+  font-fill: #4300ee;
+  font-family: Arial;
+  font-size: 13;
+  font-weight: bold;
+  label-anchor: 0.5 0;
+  label-max-displacement: 1;
+  label-padding: 10;
+}
+
+[@sd > 500 and @sd < 8000] {
+  label: [vri];
+}
+
+/*---- srv_207_k.layer007  @title Комплексное развитие территорий */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #0042ff;
+    stroke-width: 1.5px;
+    fill-opacity: 0.3;
+  }
+  stroke: #0042ff;
+  stroke-width: 2px;
+}
+
+/*---- srv_207_k.layer008  @title Планшетная сетка (Масштаб 1:2000) */
+* [@sd > 0 and @sd < 15001] {
+  stroke: #626161;
   stroke-width: 1;
 }
 
-/*--  -- srv_207_k.layer004 @title Зоны актуальные (рабочие временные)  */
+[@sd > 0 and @sd < 25001] {
+  label: [list];
+  font-fill: #626161;
+  font-family: Arial;
+  font-size: 18;
+  label-anchor: 0 0.5;
+  label-max-displacement: 1;
+}
+
+/*---- srv_207_k.layer009 @title Зоны (Сведения ограниченного доступа) */
 * {
-  stroke: #696a6e;
+  fill: symbol('shape://times');
+  :fill {
+    size: 10;
+    stroke: #0566ff;
+    stroke-width: 1px;
+  }
+  stroke: #2b3de6;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+}
+
+/*---- srv_207_k.layer010 @title Подзоны (Сведения ограниченного доступа) */
+* {
+  fill: symbol('shape://times');
+  :fill {
+    size: 10;
+    stroke: #e60000;
+    stroke-width: 1px;
+  }
+  stroke: #dd650b;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+}
+
+/*--  -- srv_208_k.layer001 @title Зоны, поставленные на кадастровый учет */
+* {
+  stroke: #0b9939;
+  stroke-width: 0.5;
+  stroke-opacity: 0.3;
+  font-fill: #0b9939;
+  font-family: Arial;
+  font-size: 13;
+  font-weight: bold;
+  label-anchor: 0.5 0;
+  label-max-displacement: 1;
+  label-padding: 10;
+  fill: symbol('shape://slash');
+  fill-rotation: 0;
+  :fill {
+    size: 20;
+    stroke: #0b9939;
+    stroke-width: 2px;
+    fill-opacity: 0.9;
+  }
+}
+
+[@sd > 500 and @sd < 8000] {
+  label: [vri_540];
+}
+
+/*--  -- srv_208_k.layer002 @title Зоны (актуальные)  */
+* {
+  stroke: #4c49ff;
+  stroke-width: 3;
+  font-fill: #1c1efa;
+  font-family: Arial;
+  font-size: 13;
+  font-weight: bold;
+  label-anchor: 0.5 0;
+  label-max-displacement: 1;
+  label-padding: 10;
+}
+
+[@sd > 500 and @sd < 8000] {
+  label: [vri_540];
+}
+
+/*--  -- srv_208_k.layer003 @title Подзоны (актуальные) */
+* {
+  stroke: #ed5d10;
+  stroke-width: 2;
+  font-fill: #ed5d10;
+  font-family: Arial;
+  font-size: 13;
+  font-weight: bold;
+  [@sd > 500 and @sd < 8000] {
+    label: [plotnost] '/' [vysota] '/' [proczastro];
+  }
+  label-anchor: 0 0;
+  label-max-displacement: 150;
+  label-padding: 2;
+}
+
+/*--  -- srv_208_k.layer004 @title Зоны по 120-ПП (14.01.2020) */
+* {
+  stroke: #4300ee;
+  stroke-width: 3;
+  font-fill: #4300ee;
+  font-family: Arial;
+  font-size: 13;
+  font-weight: bold;
+  label-anchor: 0.5 0;
+  label-max-displacement: 1;
+  label-padding: 10;
+}
+
+[@sd > 500 and @sd < 8000] {
+  label: [vri];
+}
+
+/*---- srv_208_k.layer005  @title Комплексное развитие территорий */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #0042ff;
+    stroke-width: 1.5px;
+    fill-opacity: 0.3;
+  }
+  stroke: #0042ff;
+  stroke-width: 2px;
+}
+
+/*---- srv_208_k.layer006  @title Планшетная сетка (Масштаб 1:2000) */
+* [@sd > 0 and @sd < 15001] {
+  stroke: #626161;
   stroke-width: 1;
+}
+
+[@sd > 0 and @sd < 25001] {
+  label: [list];
+  font-fill: #626161;
+  font-family: Arial;
+  font-size: 18;
+  label-anchor: 0 0.5;
+  label-max-displacement: 1;
+}
+
+/*---- srv_208_k.layer007 @title Зоны (Сведения ограниченного доступа) */
+* {
+  fill: symbol('shape://times');
+  :fill {
+    size: 5;
+    stroke: #177ff8;
+    stroke-width: 1px;
+  }
+  stroke: #157ff8;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+}
+
+/*---- srv_208_k.layer008 @title Подзоны (Сведения ограниченного доступа) */
+* {
+  fill: symbol('shape://times');
+  :fill {
+    size: 5;
+    stroke: #e60000;
+    stroke-width: 1px;
+  }
+  stroke: #dd650b;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+}
+
+/*---- srv_217_k.layer001 @title ПМТ Границы кварталов */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #88ca67;
+    stroke-width: 1.5px;
+    fill-opacity: 0.3;
+  }
+  stroke: #87ca66;
+  stroke-width: 2px;
+}
+
+/*---- srv_217_k.layer002 @title ДГИ Границы кварталов */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #005ce5;
+    stroke-width: 1px;
+    fill-opacity: 0.3;
+  }
+  stroke: #101dd8;
+  stroke-width: 2px;
+}
+
+/*---- srv_217_k.layer003 @title ДГИ Границы участков */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #e78e0e;
+    stroke-width: 1px;
+    fill-opacity: 0.3;
+  }
+  stroke: #ca7548;
+  stroke-width: 2px;
+}
+
+/*---- srv_217_k.layer004 @title ДГИ Границы сервитутов участков */
+* {
+  stroke: #ff3300;
+  stroke-width: 2px;
+}
+
+/*---- srv_217_k.layer005 @title ДГИ Границы участков с особым режимом использования */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 7;
+    stroke: #cc0000;
+    stroke-width: 1px;
+    fill-opacity: 0.3;
+  }
+  stroke: #000000;
+  stroke-width: 2px;
+}
+
+/*---- srv_217_k.layer006 @title ДГИ Границы зданий и сооружений */
+* {
+  stroke: #999999;
+  stroke-width: 2px;
+  fill: #cccc33;
+  fill-opacity: 0.5;
+}
+
+/*---- srv_218_k.layer001 @title Действующие ГПЗУ */
+* {
+  stroke: #999999;
+  stroke-width: 2px;
+  fill: #66ccff;
+  fill-opacity: 0.5;
+}
+
+/*---- srv_218_k.layer002 @title Отмененные ГПЗУ */
+* {
+  stroke: #cc3333;
+  stroke-width: 2px;
+  fill: #cc3333;
+  fill-opacity: 0.5;
+}
+
+/*---- srv_218_k.layer003 @title ГПЗУ в разработке */
+* {
+  stroke: #9966cc;
+  stroke-width: 2px;
+  stroke-dasharray: 6 6;
+}
+
+/*---- srv_218_k.layer004 @title ГПЗУ_прекращено */
+* {
+  fill: symbol('shape://times');
+  :fill {
+    size: 7;
+    stroke: #990000;
+    stroke-width: 1px;
+  }
+  stroke: #ff6666;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+}
+
+/*---- srv_218_k.layer006 @title Отмененные ГПЗУ Конкурсные */
+* {
+  stroke: #cc3333;
+  stroke-width: 2px;
+  fill: #cc3333;
+  fill-opacity: 0.5;
+}
+
+/*---- srv_218_k.layer009 @title Действующие ГПЗУ Щербинка */
+* {
+  stroke: #669999;
+  stroke-width: 2px;
+  fill: #3399cc;
+  fill-opacity: 0.5;
+}
+
+/*---- srv_231_k.layer001 @title КРТ с решением ГЗК */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #ff00ff;
+    stroke-width: 1px;
+    fill-opacity: 0.3;
+  }
+  stroke: #ff00ff;
+  stroke-width: 2px;
+}
+
+/*---- srv_231_k.layer002 @title КРТ общий список */
+* {
+  fill: symbol('wkt://LINESTRING (1 0, 2 0)'),
+    symbol('wkt://LINESTRING (0 0, 1 0)');
+  :fill {
+    size: 20;
+    stroke: #0099ff;
+    stroke-dasharray: 15 10, 5 45;
+    stroke-dashoffset: 0, 20;
+  }
+  stroke: #0099ff;
+  stroke-width: 2px;
+}
+
+/*---- srv_231_k.layer003 @title Красные зоны */
+* {
+  stroke: #ff0000;
+  stroke-width: 2px;
+  fill: #ff0033;
+  fill-opacity: 0.3;
+}
+
+/*---- srv_231_k.layer004 @title Синие зоны */
+* {
+  stroke: #3300ff;
+  stroke-width: 2px;
+  fill: #3300ff;
+  fill-opacity: 0.3;
+}
+
+/*---- srv_231_k.layer005 @title Исключение */
+* {
+  fill: symbol('shape://times');
+  :fill {
+    size: 7;
+    stroke: #cc9999;
+    stroke-width: 1px;
+  }
+  stroke: #cc9999;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+}
+
+/*---- srv_231_k.layer008 @title КРТ с решением ГЗК */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #ff00ff;
+    stroke-width: 1px;
+    fill-opacity: 0.3;
+  }
+  stroke: #ff00ff;
+  stroke-width: 2px;
+}
+
+/*---- srv_231_k.layer010 @title КРТ договоры ДГИ */
+* {
+  fill: symbol('shape://slash');
+  :fill {
+    size: 20;
+    stroke: #999966;
+    stroke-width: 1px;
+    fill-opacity: 0.3;
+  }
+  stroke: #669966;
+  stroke-width: 2px;
+}
+
+/*--1-- srv_301_k.layer001 @title Границы улично дорожной сети красные линии */
+* {
+  stroke: #cc0033;
+  stroke-width: 2px;
+}
+
+/*--1-- srv_301_k.layer002 @title Территории УДС */
+
+* {
+  fill: symbol('shape://horline');
+  stroke: #cc0033;
+  stroke-width: 0.5;
+  stroke-opacity: 0.2;
+  fill-opacity: 0.6;
+  :fill {
+    size: 10;
+    stroke: #cc0033;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer053 @title Прибрежные зоны */
+* {
+  fill: symbol('shape://slash');
+  fill-rotation: 90;
+  stroke: #0669b1;
+  stroke-width: 0.5;
+  stroke-opacity: 0.2;
+  fill-opacity: 0.75;
+  :fill {
+    size: 8;
+    stroke: #0669b1;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer050 @title Водоохранные_зоны */
+* {
+  fill: symbol('shape://slash');
+  fill-rotation: 0;
+  stroke: #0669b1;
+  stroke-width: 0.5;
+  stroke-opacity: 0.2;
+  fill-opacity: 0.75;
+  :fill {
+    size: 8;
+    stroke: #0669b1;
+    stroke-width: 1.5px;
+  }
 }
 
 /*--9-- srv_301_k.layer069  @title 3.1 Территории объектов культурного наследия (включенных в ЕГРОКН) и выявленных объектов культурного наследия  */
