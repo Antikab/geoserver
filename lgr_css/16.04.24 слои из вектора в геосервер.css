@@ -568,7 +568,7 @@
 /*--1-- srv_301_k.layer001 @title Границы улично дорожной сети красные линии */
 * {
   stroke: #cc0033;
-  stroke-width: 2px;
+  stroke-width: 1px;
 }
 
 /*--1-- srv_301_k.layer002 @title Территории УДС */
@@ -578,11 +578,701 @@
   stroke: #cc0033;
   stroke-width: 0.5;
   stroke-opacity: 0.2;
-  fill-opacity: 0.6;
+  fill-opacity: 0.75;
   :fill {
     size: 10;
     stroke: #cc0033;
+    stroke-width: 1.5px;
+  }
+}
+
+/*--1-- srv_301_k.layer003 @title Границы общего пользования */
+* {
+  stroke: #df0024;
+  stroke-width: 1.5px;
+  stroke-dasharray: 15 5;
+}
+
+/*-- -- srv_301_k.layer004 @title Территории границ общего пользования */
+* {
+  fill: symbol('shape://slash');
+  stroke: #e2007b;
+  stroke-width: 0.5;
+  stroke-opacity: 0.2;
+  fill-opacity: 0.75;
+  :fill {
+    size: 20;
+    stroke: #e2007b;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_301_k.layer005 @title Границы линейных объектов */
+* {
+  stroke: #df0024;
+  stroke-width: 1.5px;
+  stroke-dasharray: 15 5;
+}
+
+/*-- -- srv_301_k.layer006 @title Территории линейных объектов */
+* {
+  fill: symbol('shape://slash');
+  stroke: #e2007b;
+  stroke-width: 0.5;
+  stroke-opacity: 0.2;
+  fill-opacity: 0.75;
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #e2007b;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_301_k.layer007 @title Красные линии ОДМС */
+* {
+  stroke: #df0024;
+  stroke-width: 1.5px;
+  stroke-dasharray: 15 5;
+}
+
+/*-- -- srv_301_k.layer008 @title Территории ОДМС */
+* {
+  fill: symbol('shape://slash');
+  stroke: #e2007b;
+  stroke-width: 0.5;
+  stroke-opacity: 0.2;
+  fill-opacity: 0.75;
+  fill-rotation: 90;
+  :fill {
+    size: 20;
+    stroke: #e2007b;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_301_k.layer009 @title 1 4 1 Границы зон транспортных сооружений */
+* {
+  stroke: #df0024;
+  stroke-width: 1.5px;
+  stroke-dasharray: 15 5;
+}
+
+/*-- -- srv_301_k.layer010 @title Охранные зоны объектов культурного наследия */
+* {
+  stroke: #e31a1c,
+    symbol('wkt://LINESTRING (-0.31 0, -0.31 -2.7, 0.31 -2.7, 0.31 0, -0.31 0)');
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-size: none, 7;
+  fill-opacity: 0.75;
+  :nth-stroke(2) {
+    stroke: #e31a1c;
+    fill: #e31a1c; /* Цвет заливки прямоугльника */
+  }
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #23f4ff;
+    stroke-width: 1.5;
+  }
+}
+
+/*-- -- srv_301_k.layer011 @title Охранные зоны объектов культурного наследия Росреестр */
+* {
+  stroke: #e31a1c,
+    symbol('wkt://LINESTRING (-0.31 0, -0.31 -2.7, 0.31 -2.7, 0.31 0, -0.31 0)');
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-size: none, 7;
+  fill-opacity: 0.75;
+  :nth-stroke(2) {
+    stroke: #e31a1c;
+    fill: #e31a1c; /* Цвет заливки прямоугльника */
+  }
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #23f4ff;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_301_k.layer012 @title Территория зоны регулирования застройки */
+* {
+  stroke: #df0024;
+  stroke-width: 1.5px;
+  stroke-dasharray: 15 5;
+  stroke-size: none, 7;
+  fill-opacity: 0.75;
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #e5007b;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_301_k.layer013 @title Зоны регулирования застройки и хозяйственной деятельности Росреестр */
+* {
+  stroke: #df0024;
+  stroke-width: 1.5px;
+  stroke-dasharray: 15 5;
+  stroke-size: none, 7;
+  fill-opacity: 0.75;
+  fill: symbol('shape://vertline');
+  :fill {
+    size: 20;
+    stroke: #e5007b;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_301_k.layer014 @title Территория зоны охраняемого природного ландшафта */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 35;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024, symbol('wkt://LINESTRING (0 0, -0.5 -0.87, 0.5 -0.87, 0 0)'); /* Отображение галочки */
+  stroke-size: none, 5.5;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  fill-rotation: 0;
+  :fill {
+    size: 10;
+    stroke: #009e3c;
+    stroke-width: 1.5px;
+  }
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*-- -- srv_301_k.layer015 @title Зоны охраняемого природного ландшафта (Росреестр) */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 5, 5 35;
+  stroke-dashoffset: 0, 15;
+  stroke: #df0024, symbol('wkt://LINESTRING (0 0, -0.5 -0.87, 0.5 -0.87, 0 0)'); /* Отображение галочки */
+  stroke-size: none, 5.5;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  fill-rotation: 0;
+  :fill {
+    size: 10;
+    stroke: #009e3c;
+    stroke-width: 1.5px;
+  }
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+}
+
+/*-- -- srv_301_k.layer016 @title Защитные зоны объектов культурного наследия */
+* {
+  stroke: #e31a1c,
+    symbol('wkt://LINESTRING (-0.31 0, -0.31 -2.7, 0.31 -2.7, 0.31 0, -0.31 0)');
+  stroke-dasharray: none, 10 45; /* Настройка штрихов для линии */
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-size: none, 7;
+  fill-opacity: 0.75;
+  :nth-stroke(2) {
+    stroke: #e31a1c;
+    fill: #e31a1c; /* Цвет заливки прямоугльника */
+  }
+  fill: symbol('shape://horline');
+  :fill {
+    size: 20;
+    stroke: #23f4ff;
+    stroke-width: 1.5;
+  }
+}
+
+/*---- srv_301_k.layer017 @title Зоны затопления */
+* {
+  fill: symbol('shape://slash');
+  stroke: #0070ff;
+  stroke-width: 1.5;
+  stroke-opacity: 0.9;
+  fill-opacity: 0.75;
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #014ec0;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer018 @title Зоны подтопления территории сильного подтопления */
+* {
+  fill: symbol('shape://slash');
+  stroke: #a800e6;
+  stroke-width: 1.5;
+  stroke-opacity: 0.9;
+  fill-opacity: 0.75;
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #a900e5;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer019 @title Зоны подтопления территории умеренного подтопления */
+* {
+  fill: symbol('shape://slash');
+  stroke: #005ce5;
+  stroke-width: 1.5;
+  stroke-opacity: 0.9;
+  fill-opacity: 0.75;
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #005ce5;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer020 @title Зоны nподтопления территории слабого подтопления */
+* {
+  fill: symbol('shape://slash');
+  stroke: #0a8ba7;
+  stroke-width: 1.5;
+  stroke-opacity: 0.9;
+  fill-opacity: 0.75;
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #67ccaa;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer021 @title 	Приаэродромная территория аэропорта Ступино */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
     stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer022 @title 	Приаэродромная территория аэропорта Остафьево */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer023 @title 	Приаэродромная территория аэропорта Кубинка */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer024 @title 	Приаэродромная территория аэропорта Клин */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer025 @title 	Приаэродромная территория аэропорта Ермолино */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer026 @title 	Приаэродромная территория аэропорта Дягилево */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer027 @title 	Приаэродромная территория аэропорта Домодедово */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer028 @title 	Приаэродромная территория аэропорта Шереметьево */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer029 @title Первая подзона Шереметьево */
+* {
+  stroke-width: 1.5;
+  stroke: #ea880e;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer030 @title Вторая подзона Шереметьево */
+* {
+  stroke-width: 1.5;
+  stroke: #009f3c;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer031 @title Третья подзона Шереметьево */
+* {
+  stroke-width: 1.5;
+  stroke: #009f3c;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer032 @title Четвертая подзона Шереметьево */
+* {
+  stroke-width: 1.5;
+  stroke: #20e6f2;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer033 @title Пятая подзона Шереметьево */
+* {
+  stroke-width: 1.5;
+  stroke: #e3007b;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer034 @title Шестая подзона Шереметьево */
+* {
+  stroke-width: 1.5;
+  stroke: #3c107a;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer035 @title 	Приаэродромная территория Внуково */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer036 @title Первая подзона Внуково */
+* {
+  stroke-width: 1.5;
+  stroke: #ea880e;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer037 @title Вторая подзона Внуково */
+* {
+  stroke-width: 1.5;
+  stroke: #009f3c;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer038 @title Третья подзона Внуково */
+* {
+  stroke-width: 1.5;
+  stroke: #de0025;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer039 @title Четвертая подзона Внуково */
+* {
+  stroke-width: 1.5;
+  stroke: #cc0033;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer040 @title Пятая подзона Внуково */
+* {
+  stroke-width: 1.5;
+  stroke: #e2007a;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer041 @title Шестая подзона Внуково */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 1 24;
+  stroke-dashoffset: 0, 5;
+  stroke: #330066, symbol(circle);
+  stroke-size: none, 1px;
+  stroke-opacity: 0.75;
+  :nth-stroke(2) {
+    stroke: #330066;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
+  }
+}
+
+/*---- srv_301_k.layer042 @title Приаэродромная территория Черное */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: none, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.5 -0.1, -0.1 -0.87, 0.5 -0.1, -0.5 -0.1)'); /* Отображение галочки */
+  stroke-size: none, 5;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+  }
+  fill-opacity: 0.5;
+  fill: symbol('shape://slash');
+  :fill {
+    size: 10;
+    stroke: #694720;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer043 @title Первая подзона Черное */
+* {
+  stroke-width: 1.5;
+  stroke: #ea880e;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer044 @title Вторая подзона Черное */
+* {
+  stroke-width: 1.5;
+  stroke: #009e3c;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer045 @title Третья подзона Черное */
+* {
+  stroke-width: 1.5;
+  stroke: #6a4621;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer046 @title Четвертая подзона Черное */
+* {
+  stroke-width: 1.5;
+  stroke: #df0025;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer047 @title Пятая подзона Черное */
+* {
+  stroke-width: 1.5;
+  stroke: #e2007b;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer048 @title Шестая подзона Черное */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 1 24;
+  stroke-dashoffset: 0, 5;
+  stroke: #3d107b, symbol(circle);
+  stroke-size: none, 1px;
+  stroke-opacity: 0.75;
+  :nth-stroke(2) {
+    stroke: #3d107b;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
+  }
+}
+
+/*---- srv_301_k.layer049 @title Границы водоохранных зон */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0025, symbol('wkt://LINESTRING (-1 -1, 0 0, 1 -1)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0025;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
+  }
+}
+
+/*---- srv_301_k.layer050 @title Водоохранные зоны */
+* {
+  fill: symbol('shape://slash');
+  fill-rotation: 0;
+  stroke: #0669b1;
+  stroke-width: 0.5;
+  stroke-opacity: 0.2;
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #0669b1;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer051 @title Водоохранные зоны Росреестр */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45;
+  stroke-dashoffset: 0, 20;
+  stroke: #df0025, symbol('wkt://LINESTRING (-1 -1, 0 0, 1 -1)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0025;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
+  }
+  fill: symbol('shape://slash');
+  fill-rotation: 0;
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #0669b1;
+    stroke-width: 1px;
+  }
+}
+
+/*---- srv_301_k.layer052 @title Границы прибрежных зон */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45, 1 24;
+  stroke-dashoffset: 0, 20, 5;
+  stroke: #df0025, symbol('wkt://LINESTRING (-1 -1, 0 0, 1 -1)'), symbol(circle); /* Отображение галочки */
+  stroke-size: none, 5px, 1px;
+  stroke-opacity: 0.75;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0025;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
+  }
+  :nth-stroke(3) {
+    stroke: #df0025;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
   }
 }
 
@@ -595,23 +1285,252 @@
   stroke-opacity: 0.2;
   fill-opacity: 0.75;
   :fill {
-    size: 8;
+    size: 10;
     stroke: #0669b1;
     stroke-width: 1.5px;
   }
 }
 
-/*---- srv_301_k.layer050 @title Водоохранные_зоны */
+/*---- srv_301_k.layer054 @title Прибрежные защитные полосы Росреестр */
 * {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 5 45, 1 24;
+  stroke-dashoffset: 0, 20, 5;
+  stroke: #df0025, symbol('wkt://LINESTRING (-1 -1, 0 0, 1 -1)'), symbol(circle); /* Отображение галочки */
+  stroke-size: none, 5px, 1px;
+  stroke-opacity: 0.75;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0025;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
+  }
+  :nth-stroke(3) {
+    stroke: #df0025;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
+  }
   fill: symbol('shape://slash');
-  fill-rotation: 0;
-  stroke: #0669b1;
-  stroke-width: 0.5;
-  stroke-opacity: 0.2;
+  fill-rotation: 90;
   fill-opacity: 0.75;
   :fill {
-    size: 8;
+    size: 10;
     stroke: #0669b1;
+    stroke-width: 1px;
+  }
+}
+
+/*---- srv_301_k.layer055 @title Зоны санитарной охраны источников водоснабжения и водопроводов питьевого назначения */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #f40c0c;
+  stroke-width: 2px;
+  stroke-dasharray: 8 4;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 15;
+    stroke: #377eb8;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer056 @title Расчетные ПЗЗ */
+* {
+  stroke-width: 1.5;
+  stroke: #000000;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer057 @title Установленные ЕГРН */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #f40c0c;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 7;
+    stroke: #a4e98f;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer058 @title Установленные ПЗЗ */
+* {
+  fill: symbol('shape://slash');
+  stroke: #000000;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 10;
+    stroke: #000000;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer059 @title Ориентировочные ПЗЗ */
+* {
+  stroke-width: 1.5;
+  stroke: #000000;
+  stroke-dasharray: 8 4;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_301_k.layer060 @title Зоны охраняемого военного объекта охранных зон запретных и специальных зон ПЗЗ */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #df002d;
+  stroke-width: 2px;
+  stroke-dasharray: 24 8;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 10;
+    stroke: #e5007b;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer061 @title Границы охранных зон передающих радиотехнических объектов ПЗЗ */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #de0024;
+  stroke-width: 2px;
+  stroke-dasharray: 24 8;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 20;
+    stroke: #ed890f;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer062 @title Охранные зоны ООПТ */
+* {
+  stroke-width: 0.5; /* Ширина линии */
+  stroke-dasharray: none, 5 36;
+  stroke: #df0024,
+    symbol('wkt://LINESTRING (-0.25 0, -0.25 -2.5, 0.25 -2.5, 0.25 0, -0.25 0)'); /* Отображение галочки */
+  stroke-size: none, 5px;
+  /*Смещение символа вверх */
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024; /* Цвет заливки прямоугольника */
+  }
+  fill: symbol('shape://horline');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #f9f500;
+    stroke-width: 2px;
+  }
+}
+
+/*---- srv_301_k.layer063 @title Границы зоны объектов электроэнергетики ПЗЗ */
+* {
+  fill: symbol('shape://slash');
+  stroke: #de0024;
+  stroke-width: 2px;
+  stroke-dasharray: 24 8;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 20;
+    stroke: #ea880e;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer064 @title Границы охранных зон линий и сооружений связи ПЗЗ */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #de0024;
+  stroke-width: 2px;
+  stroke-dasharray: 24 8;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 20;
+    stroke: #f9f500;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer065 @title Границы охранных зон трубопроводов ПЗЗ */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #de0024;
+  stroke-width: 2px;
+  stroke-dasharray: 24 8;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 10;
+    stroke: #21e7f3;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer066 @title Границы охранных зон стационарных пунктов наблюдений за состоянием окружающей среды ПЗЗ */
+* {
+  fill: symbol('shape://vertline');
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  stroke: #df0024, symbol(square);
+  stroke-dasharray: none, 10 45;
+  stroke-rotation: 45;
+  stroke-offset: 0, 5; /* Смещение символа вверх */
+  stroke-size: none, 7;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    stroke-width: 2px;
+    stroke-opacity: 0.9;
+  }
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #694721;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer067 @title Границы охранных зон пунктов государственной геодезической нивелирной гравиметрической сети ПЗЗ */
+* {
+  fill: symbol('shape://vertline');
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  stroke: #df0024, symbol(triangle);
+  stroke-dasharray: none, 10 45;
+  stroke-rotation: 180;
+  stroke-offset: 0, 5; /* Смещение символа вверх */
+  stroke-size: none, 8;
+  :nth-stroke(2) {
+    stroke: #df0024;
+    fill: #df0024;
+    stroke-opacity: 0.9;
+  }
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #694721;
+    stroke-width: 1.5px;
+  }
+}
+
+/*---- srv_301_k.layer068 @title Границы зон минимальных расстояний до магистральных или промышленных трубопроводов ПЗЗ */
+* {
+  fill: symbol('shape://slash');
+  stroke: #de0024;
+  stroke-width: 2px;
+  stroke-dasharray: 24 8;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 20;
+    stroke: #ea880e;
     stroke-width: 1.5px;
   }
 }
@@ -927,7 +1846,7 @@
 
 /*--51-- srv_301_k.layer092 @title Чкаловский */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -937,9 +1856,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -948,7 +1868,7 @@
 
 /*--51-- srv_301_k.layer093 @title Ступино */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -958,9 +1878,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -969,7 +1890,7 @@
 
 /*--51-- srv_301_k.layer094 @title Остафьево */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -979,9 +1900,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -990,7 +1912,7 @@
 
 /*--51-- srv_301_k.layer095 @title Кубинка */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -1000,9 +1922,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -1011,7 +1934,7 @@
 
 /*--51-- srv_301_k.layer096 @title Клин */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -1021,9 +1944,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -1032,7 +1956,7 @@
 
 /*--51-- srv_301_k.layer097 @title Ермолино */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -1042,9 +1966,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -1053,7 +1978,7 @@
 
 /*--51-- srv_301_k.layer098 @title Дягилево */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -1063,9 +1988,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -1074,7 +2000,7 @@
 
 /*--51-- srv_301_k.layer099 @title Раменское */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -1084,9 +2010,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -1095,7 +2022,7 @@
 
 /*--51-- srv_301_k.layer100 @title Внуково */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -1105,18 +2032,19 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
   }
 }
 
-/*--51-- srv_301_k.layer100 @title Шереметьево */
+/*--51-- srv_301_k.layer101 @title Шереметьево */
 * {
-  stroke-width: 0.5; /* Ширина линии */
+  stroke-width: 1.5; /* Ширина линии */
   stroke-dasharray: 15 10, 5 45;
   stroke-dashoffset: 0, 20;
   stroke: #df0024,
@@ -1126,9 +2054,10 @@
   :nth-stroke(2) {
     stroke: #df0024;
   }
+  fill-opacity: 0.5;
   fill: symbol('shape://slash');
   :fill {
-    size: 20;
+    size: 10;
     stroke: #694720;
     stroke-width: 2px;
     fill-opacity: 0.9;
@@ -1154,6 +2083,521 @@
     stroke: #e2007b;
     stroke-width: 2px;
     fill-opacity: 0.9;
+  }
+}
+
+/*-- -- srv_302_k.layer001 @title Защитная зона */
+* {
+  stroke: #e9a6fd;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.5;
+  fill-rotation: 90;
+  :fill {
+    size: 7;
+    stroke: #aa66cc;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer002 @title Территория объекта культурного наследия */
+* {
+  stroke: #8e5da7;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #2706e0;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_302_k.layer004 @title Выявленные объекты археологии */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #beee5e;
+  stroke-width: 2px;
+  stroke-dasharray: 24 8;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 10;
+    stroke: #6fc5af;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer005 @title Выявленные объекты культурного наследия */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #6da356;
+  stroke-width: 2px;
+  stroke-dasharray: 24 8;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 10;
+    stroke: #6fc5af;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer006 @title Заповедная территория */
+* {
+  stroke: #ffadad;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.5;
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #be0808;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer007 @title Исторически ценный градоформирующий объект */
+* {
+  fill: symbol('shape://slash');
+  stroke: #a5a55b;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 10;
+    stroke: #000000;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer008 @title Объект историко-градостроительной среды */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #53d0f5;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 10;
+    stroke: #78b1f2;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer009 @title Объект, обладающий признаками объекта культурного наследия */
+* {
+  stroke: #8e5da6;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  fill-rotation: 90;
+  :fill {
+    size: 10;
+    stroke: #aa66cd;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer010 @title Объекты археологии */
+* {
+  stroke: #eebb5a;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #8b1300;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer011 @title Объекты культурного наследия (ИКОП) */
+* {
+  stroke: #c14da8;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #8a1300;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer012 @title Территория зоны охраняемого культурного слоя */
+* {
+  stroke: #be7856;
+  stroke-width: 2px;
+  stroke-dasharray: 6 6;
+  stroke-opacity: 0.9;
+}
+
+/*-- -- srv_302_k.layer013 @title Территория зоны охраняемого природного ландшафта */
+* {
+  fill: symbol('shape://slash');
+  stroke: #85ee50;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 20;
+    stroke: #8eef5d;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer014 @title Территория зоны регулирования застройки */
+* {
+  stroke: #99a092;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.75;
+  fill-rotation: 45;
+  :fill {
+    size: 7;
+    stroke: #a7a700;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_302_k.layer015 @title Территория зоны строгого регулирования застройки */
+* {
+  stroke: #99a092;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #a6b489;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_302_k.layer016 @title Территория объединенных охранных зон */
+* {
+  fill: symbol('shape://slash');
+  stroke: #5dc9f1;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 20;
+    stroke: #5dc8ee;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer017 @title Территория охранной зоны */
+* {
+  stroke: #5d96ee;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #00a783;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_302_k.layer018 @title Территория с утвержденным режимом  */
+* {
+  stroke: #d29f66;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+}
+
+/*-- -- srv_303_k.layer002 @title Зу, исключённые (неразграниченные)  */
+* {
+  stroke: #88ba48;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #000000;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer003 @title ЗУ исключённые все  */
+* {
+  stroke: #63716c;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #e6000e;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer004 @title ЗУ пересекающие ООПТ  */
+* {
+  stroke: #3076f5;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://vertline');
+  fill-opacity: 0.75;
+  fill-rotation: 135;
+  :fill {
+    size: 4;
+    stroke: #001fe0;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer005 @title Пересечения ЗУ и ООПТ  */
+* {
+  stroke: #5fa65f;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://horline');
+  fill-opacity: 0.75;
+  :fill {
+    size: 7;
+    stroke: #002dd6;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer009 @title Охранная зона инженерных коммуникаций */
+* {
+  stroke: #0b0b0a;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #000000;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer010 @title Зона размещения военных объектов */
+* {
+  stroke: #f02809;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #e60000;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer011 @title Зона санитарной охраны источников водоснабжения и водопроводов питьевого назначения */
+* {
+  stroke: #33c13e;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+}
+
+/*-- -- srv_303_k.layer012 @title Охранная зона линий и сооружений связи и линий и сооружений радиофикации */
+* {
+  stroke: #8530d6;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+}
+
+/*-- -- srv_303_k.layer013 @title Территории и зоны затопления и подтопления */
+* {
+  stroke: #33a7c1;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://dot');
+  fill-opacity: 0.75;
+  :fill {
+    size: 4;
+    stroke: #004da8;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer014 @title Санитарно-защитная зона предприятий, сооружений и иных объектов */
+* {
+  stroke: #050505;
+  stroke-width: 2px;
+  stroke-dasharray: 6 6;
+  stroke-opacity: 0.9;
+}
+
+/*-- -- srv_303_k.layer015 @title Запретная зона при военном складе */
+* {
+  fill: symbol('wkt://LINESTRING (0 1, 2 0)'),
+    symbol('wkt://LINESTRING (0 0, 1 0)');
+  :fill {
+    size: 15;
+    stroke: #c133c1;
+    stroke-dasharray: 0, 5 45;
+    stroke-dashoffset: 0, 20;
+  }
+  stroke: #c17cd2;
+  stroke-width: 2px;
+}
+
+/*-- -- srv_303_k.layer016 @title Зона ограничения от передающего радиотехнического объекта */
+* {
+  stroke: #0c0c0c;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #fd9c00;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer017 @title Охранная зона стационарного пункта наблюдений за состоянием окружающей природной среды */
+* {
+  stroke: #f6b78c;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.75;
+  :fill {
+    size: 7;
+    stroke: #d6a9a8;
+    stroke-width: 1px;
+  }
+}
+
+/*---- srv_303_k.layer018 @title Первая подзона Чкаловский */
+* {
+  stroke-width: 1.5;
+  stroke: #ea880e;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_303_k.layer019 @title Вторая подзона Чкаловский */
+* {
+  stroke-width: 1.5;
+  stroke: #009f3c;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_303_k.layer020  @title Третья подзона Чкаловский */
+* {
+  stroke-width: 1.5;
+  stroke: #684820;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_303_k.layer021 @title Четвертая подзона Чкаловский */
+* {
+  stroke-width: 1.5;
+  stroke: #de0024;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_303_k.layer022 @title Четвертая подзона, ограничения 300м Чкаловский */
+* {
+  stroke-width: 1.5;
+  stroke: #090908;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_303_k.layer023 @title Пятая подзона Чкаловский */
+* {
+  stroke-width: 1.5;
+  stroke: #e2007b;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_303_k.layer024 @title Шестая подзона Чкаловский */
+* {
+  stroke-width: 1.5; /* Ширина линии */
+  stroke-dasharray: 15 10, 1 24;
+  stroke-dashoffset: 0, 5;
+  stroke: #3d107b, symbol(circle);
+  stroke-size: none, 1px;
+  stroke-opacity: 0.75;
+  :nth-stroke(2) {
+    stroke: #3d107b;
+    stroke-opacity: 0.75;
+    stroke-width: 1.5; /* Ширина линии */
+  }
+}
+
+/*---- srv_303_k.layer025 @title Проектные СЗЗ */
+* {
+  stroke-width: 1.5;
+  stroke: #267200;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_303_k.layer027 @title Производственные зоны */
+* {
+  stroke-width: 2;
+  stroke: #0052fc;
+  stroke-opacity: 0.75;
+}
+
+/*---- srv_303_k.layer028 @title Промышленные зоны */
+* {
+  fill: #0ce5f7;
+  stroke-width: 2;
+  stroke: #0b9fb3;
+  stroke-opacity: 0.75;
+}
+
+/*-- -- srv_303_k.layer029 @title Территории существующей УДС (Закон) */
+* {
+  fill: symbol('shape://vertline');
+  stroke: #898989;
+  stroke-width: 1.5px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 5;
+    stroke: #8a8989;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer030 @title Территории существующей УДС (ППМ) */
+* {
+  fill: symbol('shape://horline');
+  stroke: #7f7f7f;
+  stroke-width: 1px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 7;
+    stroke: #c31f22;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_303_k.layer031 @title Территории проектируемой УДС */
+* {
+  fill: symbol('shape://horline');
+  stroke: #535555;
+  stroke-width: 2px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 5;
+    stroke: #d45cf8;
+    stroke-width: 1.5px;
   }
 }
 
