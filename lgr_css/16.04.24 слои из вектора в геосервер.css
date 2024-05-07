@@ -2601,6 +2601,603 @@
   }
 }
 
+/*-- -- srv_303_k.layer032 @title Линии электропередачи */
+* {
+  stroke: #e600a9, #fff, #fff, #002673, symbol('wkt://LINESTRING (0 -1, 0 1)');
+  stroke-dasharray: none, none, 7 10, none, 5 25; /* Настройка штрихов для линии */
+  stroke-dashoffset: none, none, 0, none, 15;
+  stroke-width: 15px, 10px, 17px, 1.5px; /* Ширина линии */
+  stroke-size: none, none, none, none, 7;
+  stroke-linecap: round, round, none, none, none;
+  z-index: 0, 1, 2, 3, 4;
+  :nth-stroke(5) {
+    stroke: #002673;
+    stroke-width: 2px;
+  }
+}
+
+/*-- -- srv_303_k.layer041 @title Нефтепродуктопроводы */
+* {
+  stroke: #706f6f;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #5d8906;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer042 @title Перечень основных трасс */
+* {
+  fill: #ff0000;
+}
+
+/*-- -- srv_303_k.layer043 @title Зона №1 */
+* {
+  stroke: #e90000;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 15;
+    stroke: #fd0000;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer044 @title Зона №2 */
+* {
+  stroke: #0484ee;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://backslash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #005ce5;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer045 @title Планшеты */
+* {
+  stroke: #ff0000;
+  stroke-opacity: 0.9;
+  stroke-width: 1.5px;
+}
+
+/*-- -- srv_303_k.layer046 @title Линейные объекты */
+* {
+  stroke: #ff0000;
+  stroke-opacity: 0.9;
+  stroke-width: 1.5px;
+}
+
+/*-- -- srv_303_k.layer047 @title Площадные объекты */
+* {
+  stroke: #ff0000;
+  stroke-opacity: 0.9;
+  stroke-width: 1.5px;
+}
+
+/*-- -- srv_303_k.layer048 @title Граница проезда внутреннего пользования (Архив СП ЛГР) */
+* {
+  stroke: #df0024;
+  stroke-opacity: 0.9;
+  stroke-width: 1.5px;
+}
+
+/*-- -- srv_303_k.layer050 @title Технические зоны подземных инженерных коммуникаций (существующее положение) */
+* {
+  stroke: #732600;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://dot');
+  fill-opacity: 0.75;
+  :fill {
+    size: 4;
+    stroke: #732600;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_303_k.layer051 @title Технические зоны ВЛЭП (существующее положение) */
+* {
+  fill: symbol('shape://dot'), symbol('shape://vertline');
+  stroke: #8400a8;
+  stroke-width: 1.5px;
+  fill-opacity: 0.75;
+  stroke-opacity: 0.9;
+  :fill {
+    size: 8px, 4px;
+    stroke: #8400a8, #8400a8;
+    stroke-width: 5px, 2px;
+  }
+}
+
+/*-- -- srv_303_k.layer052 @title Санитарно-защитные зоны (установленные) */
+* {
+  stroke: #010100;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #000000;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_303_k.layer053 @title Санитарно-защитные зоны (расчетные) */
+* {
+  stroke: #010100;
+  stroke-opacity: 0.9;
+  stroke-width: 1.5px;
+}
+
+/*-- -- srv_303_k.layer054 @title Санитарнозащитные зоны ориентировочные */
+* {
+  stroke: #010100;
+  stroke-dasharray: 12 6;
+  stroke-opacity: 0.9;
+  stroke-width: 1.5px;
+}
+
+/*-- -- srv_213_k.layer001 @title Границы ППТ */
+* {
+  stroke: #8a0a0a;
+  stroke-width: 2px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.6;
+  :fill {
+    size: 7;
+    stroke: #8b1300;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer048 @title В разработке */
+* {
+  stroke: #095b00;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #127b1e;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer049 @title Планируемые */
+* {
+  stroke: #001ae8;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #005ce6;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer050 @title Границы ППТ */
+* {
+  stroke: #850000;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://plus');
+  fill-opacity: 0.5;
+  :fill {
+    size: 5;
+    stroke: #cf0000;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer099 @title Границы ППТ */
+* {
+  stroke: #8a0b0b;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.9;
+  :fill {
+    size: 7;
+    stroke: #8a0a0a;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_213_k.layer109 @title В разработке */
+* {
+  stroke: #095b00;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #127b1e;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer110 @title Планируемые */
+* {
+  stroke: #0019e8;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #005ce6;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer122 @title Границы ППТ */
+* {
+  stroke: #8a0a0a;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.5;
+  :fill {
+    size: 7;
+    stroke: #891100;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer143 @title В разработке */
+* {
+  stroke: #095b00;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #127b1e;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer168 @title Границы ППТ */
+* {
+  stroke: #8a0a0a;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.5;
+  :fill {
+    size: 7;
+    stroke: #891100;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer214 @title В разработке */
+* {
+  stroke: #095b00;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #127b1e;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer215 @title Планируемые */
+* {
+  stroke: #0019e8;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #005ce6;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer216 @title Границы ППТ */
+* {
+  stroke: #850000;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://plus');
+  fill-opacity: 0.5;
+  :fill {
+    size: 5;
+    stroke: #cd0000;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer263 @title Границы ППТ */
+* {
+  stroke: #8a0a0a;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.5;
+  :fill {
+    size: 7;
+    stroke: #891100;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer309 @title В разработке */
+* {
+  stroke: #095b00;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #127b1e;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer310 @title Планируемые */
+* {
+  stroke: #0019e8;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #005ce6;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer359 @title Границы ППТ */
+* {
+  stroke: #8a0a0a;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.5;
+  :fill {
+    size: 7;
+    stroke: #891100;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer405 @title В разработке */
+* {
+  stroke: #095b00;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #127b1e;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer455 @title Границы ППТ */
+* {
+  stroke: #8a0a0a;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.5;
+  :fill {
+    size: 7;
+    stroke: #891100;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer501 @title В разработке */
+* {
+  stroke: #095b00;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #127b1e;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer502 @title Планируемые */
+* {
+  stroke: #0019e8;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #005ce6;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer503 @title Границы ППТ */
+* {
+  stroke: #850000;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://plus');
+  fill-opacity: 0.5;
+  :fill {
+    size: 5;
+    stroke: #cd0000;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer551 @title Границы ППТ */
+* {
+  stroke: #8a0a0a;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.5;
+  :fill {
+    size: 7;
+    stroke: #891100;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer588 @title В разработке */
+* {
+  stroke: #095b00;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #127b1e;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_213_k.layer589 @title Планируемые */
+* {
+  stroke: #0019e8;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 9;
+    stroke: #005ce6;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_215_k.layer001 @title Утвержденные проекты планировки */
+* {
+  stroke: #e50000;
+  stroke-width: 2.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://backslash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 15;
+    stroke: #fd0000;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_215_k.layer002 @title Проекты планировки 2018-2020 гг. */
+* {
+  stroke: #0083a7;
+  stroke-width: 2.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://backslash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 15;
+    stroke: #0084a7;
+    stroke-width: 1.5px;
+  }
+}
+
+/*-- -- srv_215_k.layer003 @title Жилые дома, включенные в программу реновации */
+* {
+  stroke: #68716e;
+  stroke-opacity: 0.9;
+  stroke-width: 1px;
+  fill: #339071;
+}
+
+/*-- -- srv_215_k.layer004 @title Сохраняемые дома в рамках реновации (Архнадзор) */
+* {
+  stroke: #716b68;
+  stroke-opacity: 0.9;
+  stroke-width: 1px;
+  fill: #875026;
+}
+
+/*-- -- srv_215_k.layer005 @title Стартовые площадки (жилые) */
+* {
+  stroke: #2b8b70;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 15;
+    stroke: #4ebb9b;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_215_k.layer006 @title Стартовые площадки (нежилые) */
+* {
+  stroke: #2b8c70;
+  stroke-width: 1px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.5;
+  :fill {
+    size: 7;
+    stroke: #23c283;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_215_k.layer007 @title Границы разработки концепций реновации территории */
+* {
+  stroke: #ff9500;
+  stroke-width: 1.5px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://slash');
+  fill-opacity: 0.75;
+  :fill {
+    size: 10;
+    stroke: #f4af39;
+    stroke-width: 1px;
+  }
+}
+
+/*-- -- srv_215_k.layer008 @title Границы подготовки благоустройства территорий */
+* {
+  stroke: #5099fd;
+  stroke-width: 1px;
+  stroke-opacity: 0.9;
+  fill: symbol('shape://times');
+  fill-opacity: 0.5;
+  :fill {
+    size: 7;
+    stroke: #0564ff;
+    stroke-width: 1px;
+  }
+}
+
 /*--10-- @title Границы территорий ОКН  */
 [one_code='10'] {
   stroke: #df0024,
